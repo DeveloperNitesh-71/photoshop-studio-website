@@ -1,0 +1,19 @@
+
+
+.images{
+    display: grid;
+    grid-template-columns: 300px 300px 300px ;
+    overflow: hidden;
+    grid-gap: 10px;
+}
+
+.images img{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    transition: .3s ease;
+}
+
+.images img:hover{
+    scale: 1.02;
+}
