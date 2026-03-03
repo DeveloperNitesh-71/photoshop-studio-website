@@ -1,0 +1,164 @@
+.whyTeam {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-block: 20px;
+}
+
+.whyUs,
+.team {
+    width: 40%;
+    height: 400px;
+    /* background: radial-gradient(circle at center, rgba(1, 1, 27, 0.473) 70%); */
+    /* border: 1px solid rgba(255, 255, 255, 0.116); */
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+.divider {
+    height: 400px;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.582), transparent);
+}
+
+.whyUs h2 {
+    color: white;
+    font-weight: 400;
+}
+
+.why {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(32, 7, 11, 0.342);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.ans {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ans .headline {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ans p {
+    color: aliceblue;
+    font-size: 13px;
+}
+
+.team h1, .members h1 {
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.555), rgb(237 136 60));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.team p{
+    color: white;
+    font-size: 13px;
+}
+
+.team ul{
+    color: white;
+    padding-left: 20px;
+}
+
+.team button{
+    /* width: max-content; */
+    padding: 7px 25px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    background: linear-gradient(33deg, rgb(90, 15, 27) 25%, rgb(209, 43, 43));
+    transition: .3s ease;
+}
+
+.team button:hover{
+    box-shadow: 0px 0px 20px rgb(90, 15, 27);
+    transform: translateY(-3px);
+}
+
+.members{
+    padding-inline: 105px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.teamMembers{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.memberProfile{
+    height: 270px;
+    width: 260px;
+    border: 1px solid rgba(255, 255, 255, 0.171);
+    border-radius: 3px;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(4, 4, 85, 0.747), rgba(92, 11, 26, 0.438) 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    gap: 5px;
+    transition: .3s ease;
+
+}
+
+.memberProfileimg{
+    height: 200px;
+    width: 100%;
+    background-image: url(../assets/profile1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+
+.memberName{
+    font-size: 14px;
+}
+
+.memberProfession{
+    font-size: 12px;
+    color: gray;
+}
+
+.memberProfileimg2{
+    background-image: url(../assets/profile2.png);
+}
+.memberProfileimg3{
+    background-image: url(../assets/profile3.png);
+}
+
+.memberProfile:hover{
+    transform: translateY(-6px);
+    box-shadow: 0px 0px 20px rgba(92, 11, 26, 0.438);
+}
