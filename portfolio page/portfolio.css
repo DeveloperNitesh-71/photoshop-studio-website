@@ -1,19 +1,33 @@
-
-
-.images{
+.images {
     display: grid;
-    grid-template-columns: 300px 300px 300px ;
+    grid-template-columns: 300px 300px 300px;
     overflow: hidden;
     grid-gap: 10px;
 }
 
-.images img{
+.images img {
     object-fit: cover;
     height: 200px;
     width: 100%;
     transition: .3s ease;
 }
 
-.images img:hover{
+.images img:hover {
     scale: 1.02;
+}
+
+
+@media (max-width: 850px) {
+    .images {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        overflow: hidden;
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width:650px) {
+    .images {
+        grid-template-columns: 300px;
+    }
 }

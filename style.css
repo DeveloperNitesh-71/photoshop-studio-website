@@ -68,17 +68,22 @@ nav ul button,
     transition: all .3s ease;
 }
 
+.booking a {
+    text-decoration: none;
+    color: white;
+}
+
 nav ul button:hover,
 .booking:hover {
     box-shadow: 0px 0px 10px rgba(58, 1, 32);
     background: rgba(58, 1, 32, 0.2);
 }
 
-.active{
+.active {
     position: relative;
 }
 
-.active::after{
+.active::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -88,37 +93,47 @@ nav ul button:hover,
     background-color: red;
 }
 
-.pseudoActive{
+.pseudoActive {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
-.pseudoActive::after{
-    transition:  .3s ease;
+.pseudoActive::after {
+    transition: .3s ease;
     content: "";
     position: absolute;
     bottom: 0;
-    /* left: 50%; */
     width: 0;
     height: 1px;
     background-color: red;
 }
 
-.pseudoActive:hover::after{
+.pseudoActive:hover::after {
     width: 100%;
+}
+
+.fa-bars {
+    color: white;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    display: none;
 }
 
 /* section 1 */
 
 .section1 {
     background-image: url(assets/back2.png);
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero {
@@ -128,6 +143,7 @@ nav ul button:hover,
     justify-content: flex-end;
     padding: 100px;
     padding-top: 150px;
+    padding-bottom: 20px;
 }
 
 .hero h1 {
@@ -181,16 +197,23 @@ nav ul button:hover,
     transform: translateY(-3px);
 }
 
+.book a,
+.view a {
+    text-decoration: none;
+    color: white;
+}
+
 .ratings {
     width: 100%;
     background: rgb(20 20 20 / 73%);
     backdrop-filter: blur(10px);
-    margin-top: 12vh;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 
@@ -248,7 +271,8 @@ nav ul button:hover,
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: 100vh;
+    height: max-content;
+    padding-block: 150px;
     background: linear-gradient(333deg, #000000, #000020f2, #000000);
     position: relative;
 }
@@ -353,6 +377,11 @@ nav ul button:hover,
     transition: all .3s ease;
 }
 
+.allservices a {
+    text-decoration: none;
+    color: white;
+}
+
 .allServicesButton .left {
     height: 1px;
     width: 300px;
@@ -371,6 +400,7 @@ nav ul button:hover,
 }
 
 /* section 3 */
+
 .section3 {
     width: 100%;
     background: linear-gradient(333deg, #000000, #000020f2, #000000);
@@ -418,7 +448,6 @@ footer {
     background: linear-gradient(333deg, #000000, #000020f2, #000000);
     font-size: 20px;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 .quicklinks ul li,
@@ -434,7 +463,7 @@ footer {
 .quicklinks ul li a,
 .service ul li a,
 .portfolio ul li a,
-.contact ul li a{
+.contact ul li a {
     text-decoration: none;
     color: white;
 }
@@ -446,7 +475,14 @@ footer {
     transform: translateY(-2px);
 }
 
-.copyright{
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.copyright {
     color: white;
     display: flex;
     align-items: center;
@@ -457,7 +493,8 @@ footer {
     height: 50px;
     background: linear-gradient(333deg, #000000, #000020f2, #000000);
 }
-.copyright::before{
+
+.copyright::before {
     content: "";
     position: absolute;
     top: 0;
@@ -465,4 +502,65 @@ footer {
     width: 100%;
     background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
     height: 1px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    footer {
+        width: 100%;
+        padding-block: 40px;
+        padding-inline: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        justify-content: center;
+        color: white;
+        background: linear-gradient(333deg, #000000, #000020f2, #000000);
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    .buttons button {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .ratings ul {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .heading h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:400px) {
+    footer {
+        grid-template-columns: 1fr;
+
+    }
+
+    .buttons button {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .ratings ul li img {
+        height: 15px;
+    }
 }

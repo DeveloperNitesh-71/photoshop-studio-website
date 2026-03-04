@@ -10,13 +10,9 @@
 .whyUs,
 .team {
     width: 40%;
-    height: 400px;
-    /* background: radial-gradient(circle at center, rgba(1, 1, 27, 0.473) 70%); */
-    /* border: 1px solid rgba(255, 255, 255, 0.116); */
     flex-direction: column;
     display: flex;
     align-items: flex-start;
-    /* justify-content: center; */
     gap: 20px;
 }
 
@@ -63,7 +59,8 @@
     font-size: 13px;
 }
 
-.team h1, .members h1 {
+.team h1,
+.members h1 {
     color: white;
     font-weight: 600;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.555), rgb(237 136 60));
@@ -72,18 +69,17 @@
     color: transparent;
 }
 
-.team p{
+.team p {
     color: white;
     font-size: 13px;
 }
 
-.team ul{
+.team ul {
     color: white;
     padding-left: 20px;
 }
 
-.team button{
-    /* width: max-content; */
+.team button {
     padding: 7px 25px;
     border-radius: 5px;
     color: white;
@@ -95,12 +91,12 @@
     transition: .3s ease;
 }
 
-.team button:hover{
+.team button:hover {
     box-shadow: 0px 0px 20px rgb(90, 15, 27);
     transform: translateY(-3px);
 }
 
-.members{
+.members {
     padding-inline: 105px;
     padding-top: 40px;
     display: flex;
@@ -108,13 +104,15 @@
     flex-direction: column;
 }
 
-.teamMembers{
+.teamMembers {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.memberProfile{
+.memberProfile {
     height: 270px;
     width: 260px;
     border: 1px solid rgba(255, 255, 255, 0.171);
@@ -131,7 +129,7 @@
 
 }
 
-.memberProfileimg{
+.memberProfileimg {
     height: 200px;
     width: 100%;
     background-image: url(../assets/profile1.png);
@@ -142,23 +140,57 @@
 }
 
 
-.memberName{
+.memberName {
     font-size: 14px;
 }
 
-.memberProfession{
+.memberProfession {
     font-size: 12px;
     color: gray;
 }
 
-.memberProfileimg2{
+.memberProfileimg2 {
     background-image: url(../assets/profile2.png);
 }
-.memberProfileimg3{
+
+.memberProfileimg3 {
     background-image: url(../assets/profile3.png);
 }
 
-.memberProfile:hover{
+.memberProfile:hover {
     transform: translateY(-6px);
     box-shadow: 0px 0px 20px rgba(92, 11, 26, 0.438);
+}
+
+
+@media(max-width:850px) {
+    .whyTeam {
+        flex-direction: column;
+    }
+
+    .divider {
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(to right, transparent, white, transparent);
+    }
+
+    .whyUs,
+    .team {
+        width: 80%;
+    }
+}
+
+@media (max-width:500px) {
+    .members {
+        align-items: center;
+    }
+
+    .teamMembers {
+        width: 300px;
+
+    }
+
+    .members h1 {
+        width: 300px;
+    }
 }

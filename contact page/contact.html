@@ -23,9 +23,10 @@
                 <li><a href="../portfolio page/portfolio.html" class="pseudoActive">Portfolio</a></li>
                 <li><a href="../about page/about.html" class="pseudoActive">About</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
-                <button class="booking">Book a Shoot</button>
+                <button class="booking"><a href="contact.html">Book a Shoot</a></button>
             </ul>
         </nav>
+        <i class="fa-solid fa-bars"></i>
     </header>
 
     <main>
@@ -38,14 +39,17 @@
             <img src="../assets/user.png" alt="">
             <input type="text" name="name" id="name" placeholder="Full Name">
         </div>
+        <p class="nameError hide"></p>
         <div class="email">
             <img src="../assets/email.png" alt="">
             <input type="email" name="email" id="email" placeholder="Email Address">
         </div>
+        <p class="emailError hide"></p>
         <div class="number">
             <img src="../assets/call.png" alt="">
             <input type="tel" name="number" id="number" placeholder="Phone number">
         </div>
+        <p class="numberError hide"></p>
         <textarea name="msg" id="msg" placeholder="your message"></textarea>
         <button class="send">Send message</button>
     </form>
@@ -60,13 +64,16 @@
         <div class="vericaldivider"></div>
         <div class="map">
             <h1>Our Location</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38405.38219360152!2d-74.02954343442003!3d40.71285287706484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1772473096909!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38405.38219360152!2d-74.02954343442003!3d40.71285287706484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1772473096909!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="vericaldivider"></div>
         <div class="follow">
             <h1>Follow Us</h1>
             <p>contact with us on social media for the <br>
-            latest updates and behind the scenes content</p>
+                latest updates and behind the scenes content</p>
             <div class="socialLinks">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-facebook"></i>
@@ -102,8 +109,8 @@
             <ul>
                 <li><a href="../about page/about.html">Why us</a></li>
                 <li><a href="../portfolio page/portfolio.html">Gallery</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="about.html">About Team</a></li>
+                <li><a href="../about page/about.html">About us</a></li>
+                <li><a href="../about page/about.html">About Team</a></li>
             </ul>
         </div>
         <div class="contact">
@@ -112,11 +119,13 @@
                 <li>lucknow</li>
                 <li>1234567890</li>
                 <li>123 photography st.</li>
-                <button class="booking">Book a Shoot</button>
+                <button class="booking"><a href="contact.html">Book a Shoot</a></button>
             </ul>
         </div>
     </footer>
     <div class="copyright">&copy;2026 xyz studio. All Rights Reserved</div>
+
+    <script src="contact.js"></script>
 </body>
 
 </html>

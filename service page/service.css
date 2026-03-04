@@ -1,6 +1,4 @@
-
-
-body{
+body {
     background: linear-gradient(333deg, #000000, #000020f2, #000000);
 }
 
@@ -19,7 +17,7 @@ main {
     position: relative;
 }
 
-main::after{
+main::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -29,14 +27,14 @@ main::after{
     background: linear-gradient(to right, transparent, rgba(255, 255, 255), transparent);
 }
 
-main h1{
+main h1 {
     color: white;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 50px;
 }
 
-main h3{
+main h3 {
     color: white;
     font-weight: 500;
     text-transform: capitalize;
@@ -44,11 +42,11 @@ main h3{
     font-size: 25px;
 }
 
-main p{
+main p {
     color: white;
 }
 
-.ready{
+.ready {
     padding: 40px 80px;
     display: flex;
     flex-direction: column;
@@ -58,14 +56,13 @@ main p{
     gap: 20px;
     position: relative;
     text-transform: uppercase;
-    /* font-weight: 500; */
 }
 
-.ready h1{
+.ready h1 {
     font-weight: 500;
 }
 
-.get{
+.get {
     padding: 5px 20px;
     border: 1px solid rgba(255, 255, 255, 0.212);
     color: white;
@@ -76,12 +73,17 @@ main p{
     transition: .3s ease;
 }
 
-.get:hover{
+.get a {
+    text-decoration: none;
+    color: white;
+}
+
+.get:hover {
     box-shadow: 0px 0px 20px orangered;
     transform: translateY(-3px);
 }
 
-.ready::after{
+.ready::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -91,6 +93,16 @@ main p{
     background: linear-gradient(to right, transparent, rgba(255, 255, 255), transparent);
 }
 
-footer{
+footer {
     background: none;
+}
+
+@media(max-width:550px) {
+    main h1 {
+        font-size: 35px;
+    }
+
+    .ready h1 {
+        font-size: 15px;
+    }
 }
