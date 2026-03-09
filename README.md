@@ -2,10 +2,6 @@
 
 A modern and responsive website designed for a Photoshop studio to showcase services, portfolio work, and client information.
 
-🚧 **Project Status: Work in Progress**
-
-This project is currently under active development. More pages, features, and enhancements will be added soon.
-
 ---
 
 ## 🎯 Project Goal
@@ -25,11 +21,6 @@ The purpose of this project is to create a professional online presence for a cr
 * 🖼️ Studio introduction section
 * 🧱 Structured UI sections
 * Clean and modern design
-
----
-
-## 🔜 Upcoming Features
-
 * Responsive UI
 * Portfolio gallery page
 * Service details page
@@ -49,6 +40,7 @@ The purpose of this project is to create a professional online presence for a cr
 ---
 
 ## 🌐 Live Demo
+https://developernitesh-71.github.io/photoshop-studio-website/
 
 ---
 
@@ -62,11 +54,11 @@ The purpose of this project is to create a professional online presence for a cr
 
 ## 📈 Development Roadmap
 
-* Phase 1: UI Design
-* Phase 2: Multi-page Structure
-* Phase 3: Form Handling & Validation
-* Phase 4: Animations & Optimization
-* Phase 5: Final Deployment
+* Phase 1: UI Design✅
+* Phase 2: Multi-page Structure✅
+* Phase 3: Form Handling & Validation✅
+* Phase 4: Animations & Optimization✅
+* Phase 5: Final Deployment✅
 
 ---
 
