@@ -9,6 +9,7 @@
 
 body {
     min-height: 100vh;
+    /* position: relative; */
 }
 
 body::-webkit-scrollbar {
@@ -120,6 +121,44 @@ nav ul button:hover,
     width: 40px;
     font-size: 20px;
     display: none;
+}
+
+
+.hamburger{
+    position: absolute;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px black;
+    z-index: 55;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.hamburger ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.hamburger ul li{
+    list-style: none;
+}
+
+.hamburger ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.come{
+    left: 50%;
 }
 
 /* section 1 */
